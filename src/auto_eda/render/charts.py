@@ -16,6 +16,7 @@ import plotly.graph_objects as go
 from ..config import Config, DEFAULT_CONFIG
 from ..findings import Finding
 from ..profiling import DatasetProfile
+from ..quality import QualityScore
 
 # Validated reference palette (light mode)
 SERIES_1 = "#2a78d6"  # primary series hue
@@ -109,10 +110,39 @@ def _fig_for(finding: Finding, profile: DatasetProfile) -> go.Figure | None:
     return None  # duplicates, whitespace, type casts etc. have nothing useful to plot
 
 
+def _score_hue(score: float) -> str:
+    if score >= 90:
+        return SERIES_2  # green
+    if score >= 75:
+        return "#a8b023"
+    if score >= 60:
+        return "#c99a1e"
+    return CRITICAL
+
+
+def _quality_badge(quality: QualityScore | None) -> str:
+    if quality is None:
+        return ""
+    hue = _score_hue(quality.overall)
+    dims = "".join(
+        f'<div class="dim"><span class="dname">{html.escape(d.name)}</span>'
+        f'<span class="dbar"><span style="width:{d.score:.0f}%;background:{_score_hue(d.score)}"></span></span>'
+        f'<span class="dscore">{d.score:.0f}</span></div>'
+        for d in quality.dimensions
+    )
+    return (
+        f'<section class="score" style="border-color:{hue}">'
+        f'<div class="grade" style="color:{hue}">{quality.grade}'
+        f'<span class="gnum">{quality.overall:.0f}/100</span></div>'
+        f'<div class="dims">{dims}</div></section>'
+    )
+
+
 def write_charts(
     findings: list[Finding],
     profile: DatasetProfile,
     out_path: Path,
+    quality: QualityScore | None = None,
     config: Config = DEFAULT_CONFIG,
 ) -> int:
     """Write charts.html for the top-N findings; returns the number of charts."""
@@ -145,9 +175,21 @@ def write_charts(
   .rank {{ position: absolute; top: 12px; left: 16px; color: {INK_MUTED};
            font-size: 13px; font-weight: 600; z-index: 5; }}
   .note {{ color: #52514e; font-size: 14px; margin: 4px 8px 12px; }}
+  .score {{ display: flex; align-items: center; gap: 24px; background: {SURFACE};
+            border: 2px solid {INK_MUTED}; border-radius: 8px; padding: 16px 20px; margin: 20px 0; }}
+  .grade {{ font-size: 44px; font-weight: 700; line-height: 1; }}
+  .gnum {{ display: block; font-size: 13px; font-weight: 500; color: {INK_MUTED}; margin-top: 4px; }}
+  .dims {{ flex: 1; }}
+  .dim {{ display: flex; align-items: center; gap: 10px; font-size: 13px; margin: 3px 0; }}
+  .dname {{ width: 110px; color: #52514e; }}
+  .dbar {{ flex: 1; height: 8px; background: {GRIDLINE}; border-radius: 4px; overflow: hidden; }}
+  .dbar span {{ display: block; height: 100%; }}
+  .dscore {{ width: 28px; text-align: right; color: {INK}; font-variant-numeric: tabular-nums; }}
 </style></head><body>
 <h1>auto-eda — top findings</h1>
-<p class="sub">Charts for the highest-ranked findings only. Full list in the terminal output or report.</p>
+<p class="sub">Deterministic data-quality score, then charts for the highest-ranked findings only.
+Full list in the terminal output or report.</p>
+{_quality_badge(quality)}
 {"".join(sections) if sections else "<p>No chartable findings.</p>"}
 </body></html>"""
     out_path.write_text(doc, encoding="utf-8")

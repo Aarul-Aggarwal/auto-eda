@@ -19,6 +19,7 @@ from .findings import score_findings
 from .ingest import load_csv
 from .llm.provider import resolve_provider
 from .llm.ranker import RankResult, rank
+from .quality import QualityScore, compute_quality
 from .render import charts, report, terminal
 
 app = typer.Typer(help="Automated data cleaning + EDA with LLM-prioritized findings.")
@@ -52,8 +53,10 @@ def analyze(
         terminal.console.print(f"[red]Target column '{target}' not found; ignoring.[/red]")
         target = None
 
-    # 2. Detect issues on the raw data
+    # 2. Detect issues on the raw data + score its quality (deterministic, no LLM)
     raw_findings = score_findings(detectors.run_all(ingest.df, prof, config), config)
+    quality_before = compute_quality(prof, raw_findings, config)
+    quality_after: QualityScore | None = None
 
     # 3. Propose + optionally apply cleaning fixes
     fixes = cleaning.plan_fixes(raw_findings)
@@ -77,6 +80,11 @@ def analyze(
         terminal.show_applied(applied, cleaned_path, script_path)
         artifacts += [cleaned_path, script_path]
         prof = profiling.profile(df.astype(str).where(df.notna()), config)
+        # Re-detect on the cleaned data so the "after" score reflects the fixes.
+        quality_after = compute_quality(prof, detectors.run_all(df, prof, config), config)
+
+    # Data-quality score: the headline, before -> after when cleaning ran.
+    terminal.show_quality_score(quality_before, quality_after)
 
     # 4. EDA on the (possibly cleaned) data
     all_findings = raw_findings + score_findings(eda.analyze(prof, target, config), config)
@@ -89,13 +97,16 @@ def analyze(
     result: RankResult = rank(all_findings, prof, provider, target, config)
 
     # 6. Render
+    quality = quality_after or quality_before
     charts_path = out_dir / "charts.html"
-    n_charts = charts.write_charts(result.findings, prof, charts_path, config)
+    n_charts = charts.write_charts(result.findings, prof, charts_path, quality, config)
     artifacts.append(charts_path)
 
     if report_flag:
         report_path = out_dir / "report.md"
-        report.write_report(result, prof, applied, ingest.path, report_path, target)
+        report.write_report(
+            result, prof, applied, ingest.path, report_path, target, quality_before, quality_after
+        )
         artifacts.append(report_path)
 
     terminal.show_ranked_findings(result)
