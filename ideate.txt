@@ -1,0 +1,18 @@
+I'm planning a portfolio project: a CLI tool for automated data cleaning 
+and exploratory data analysis (EDA), built in Python (Typer + Rich), 
+that uses an LLM to prioritize what's worth looking at instead of 
+dumping every statistic with equal weight — the way existing tools 
+like ydata-profiling, Sweetviz, and AutoViz do.
+
+Rough idea: point it at a raw CSV, it detects and proposes cleaning 
+fixes (duplicates, nulls, type issues, inconsistent formatting, etc.), 
+then runs standard EDA (distributions, correlations, outliers, class 
+balance if there's a target column), and uses an LLM to turn all of 
+that into a short, ranked list of what actually matters for this 
+dataset — rather than a wall of stats.
+
+Please ideate on this: propose an architecture, decide what should be 
+deterministic code versus what the LLM should actually be used for, 
+flag anything in my framing that's a bad idea or overscoped, and lay 
+out a build plan. Push back where you disagree — I want your actual 
+take, not just validation of my idea.

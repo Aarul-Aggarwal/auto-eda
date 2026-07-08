@@ -1,0 +1,516 @@
+customer_id,name,city,signup_date,age,income,plan,churn,notes
+1,Customer 1,NEW YORK,2020-07-21,null,null, Basic ,no,
+2,Customer 2,boston,2022-01-27,32,null, PREMIUM ,no,N/A
+3,Customer 3,NEW YORK,2022-03-18,37,163000,enterprise,no,
+4,Customer 4,boston,2019-10-07,52,129000,PREMIUM,no,N/A
+5,Customer 5,New York,2023-05-17,39,134000,basic,no,?
+6,Customer 6,Boston,2019-11-03,54,100000,PREMIUM,no,-
+7,Customer 7,Boston,2024-11-03,-,167000,premium,no,?
+8,Customer 8,NEW YORK,2020-10-04,31,93000,PREMIUM,no,?
+9,Customer 9,boston,2021-03-27,53,91000,PREMIUM,no,N/A
+10,Customer 10,Chicago,2020-01-16,29,87000,enterprise,no,vip
+11,Customer 11,Chicago,2023-10-21,21,136000,enterprise,no,?
+12,Customer 12,New York,2020-02-07,25,null,Basic,no,
+13,Customer 13,Seattle,2020-10-13,34,108000,basic,no,?
+14,Customer 14,NEW YORK,2019-03-04,65,87000, enterprise ,no,N/A
+15,Customer 15,Chicago,2023-01-25,59,43000,premium,no,null
+16,Customer 16,Seattle,2023-06-21,69,69000,Basic,no,
+17,Customer 17,Seattle,2021-08-09,56,108000,premium,no,N/A
+18,Customer 18,Boston,2020-06-07,75,176000,premium,no,?
+19,Customer 19,Seattle,2024-04-16,45,105000,PREMIUM,no,N/A
+20,Customer 20,new york,2020-01-05,47,57000,PREMIUM,no,N/A
+21,Customer 21,New York,2019-12-21,65,55000, Basic ,no,null
+22,Customer 22,NEW YORK,2021-09-14,21,110000,enterprise,no,null
+23,Customer 23,new york,2023-09-01,67,66000,Basic,no,null
+24,Customer 24,New York,2021-11-17,48,N/A, premium ,no,
+25,Customer 25,Seattle,2019-08-11,50,175000,PREMIUM,no,N/A
+26,Customer 26,Chicago,2023-05-18,30,134000,PREMIUM,no,N/A
+27,Customer 27,Chicago,2021-02-25,63,113000,PREMIUM,no,?
+28,Customer 28,new york,2024-04-06,50,123000,premium,no,?
+29,Customer 29,Boston,2024-01-13,57,N/A,basic,no,vip
+30,Customer 30,new york,2021-03-27,61,86000,enterprise,no,
+31,Customer 31,Seattle,2024-03-14,35,24000,basic,no,
+32,Customer 32,Boston,2019-06-18,35,179000,Basic,no,N/A
+33,Customer 33,new york,2021-11-10,31,94000,premium,yes,
+34,Customer 34,New York,2024-09-18,50,141000,PREMIUM,no,vip
+35,Customer 35,boston,2021-12-07,39,70000,Basic,no,N/A
+36,Customer 36,New York,2019-11-24,45,61000,PREMIUM,no,N/A
+37,Customer 37,Chicago,2021-01-15,35,7000000,enterprise,yes,vip
+38,Customer 38,new york,2021-03-01,23,141000,Basic,yes,
+39,Customer 39,new york,2022-10-02,37,null,Basic,no,vip
+40,Customer 40,Boston,2021-12-16,64,null,PREMIUM,no,null
+41,Customer 41,Seattle,2023-10-27,19,169000,Basic,yes,
+42,Customer 42,Boston,2022-09-02,58,156000,basic,yes,vip
+43,Customer 43,boston,2019-11-17,?,84000,Basic,no,?
+44,Customer 44,Boston,2022-02-16,36,31000,basic,no,-
+45,Customer 45,boston,2023-03-01,49,N/A,PREMIUM,no,?
+46,Customer 46,Seattle,2019-09-07,23,null,PREMIUM,no,vip
+47,Customer 47,new york,2019-10-03,51,87000,enterprise,no,?
+48,Customer 48,Boston,2022-01-06,?,135000,PREMIUM,no,
+49,Customer 49,NEW YORK,2021-07-04,30,23000,premium,no,vip
+50,Customer 50,New York,2021-07-25,21,91000,premium,no,vip
+51,Customer 51,Boston,2023-06-07,68,129000,PREMIUM,no,
+52,Customer 52,New York,2024-07-15,26,93000,enterprise,no,-
+53,Customer 53,NEW YORK,2024-12-21,59,81000,PREMIUM,no,null
+54,Customer 54,Seattle,2022-09-08,39,135000,Basic,no,N/A
+55,Customer 55,NEW YORK,2021-10-07,65,125000,Basic,no,-
+56,Customer 56,boston,2021-03-22,58,75000,PREMIUM,no,vip
+57,Customer 57,Seattle,2019-03-02,66,141000,basic,no,?
+58,Customer 58,Boston,2020-02-08,51,47000,PREMIUM,no,N/A
+59,Customer 59,new york,2023-01-21,26,180000,basic,no,vip
+60,Customer 60,new york,2022-05-08,18,22000,premium,no,vip
+61,Customer 61,Boston,2023-04-18,44,98000,PREMIUM,no,-
+62,Customer 62,new york,2022-01-23,44,112000,premium,no,N/A
+63,Customer 63,NEW YORK,2020-04-15,66,95000,enterprise,no,
+64,Customer 64,boston,2020-07-02,56,56000,Basic,no,vip
+65,Customer 65,Chicago,2019-02-06,29,?,premium,no,
+66,Customer 66,NEW YORK,2019-06-14,25,163000,premium,no,
+67,Customer 67,New York,2024-08-07,46,69000, PREMIUM ,no,?
+68,Customer 68,New York,2022-01-15,,null,premium,no,vip
+69,Customer 69,New York,2021-12-23,35,N/A,basic,no,vip
+70,Customer 70,Boston,2021-07-27,49,6000000,Basic,no,-
+71,Customer 71,Seattle,2023-02-17,66,,PREMIUM,no,vip
+72,Customer 72,New York,2019-05-20,24,127000,PREMIUM,no,N/A
+73,Customer 73,Chicago,2023-11-25,71,95000,premium,no,N/A
+74,Customer 74,new york,2020-03-10,55,68000,Basic,no,?
+75,Customer 75,New York,2019-01-16,32,-,Basic,no,vip
+76,Customer 76,boston,2020-02-12,29,134000,basic,no,N/A
+77,Customer 77,New York,2021-06-05,-,29000,Basic,no,-
+78,Customer 78,new york,2023-05-03,68,,PREMIUM,no,N/A
+79,Customer 79,Boston,2024-05-14,60,null,premium,yes,-
+80,Customer 80,Chicago,2020-07-24,18,131000,basic,no,N/A
+81,Customer 81,new york,2019-01-18,69,121000,premium,no,N/A
+82,Customer 82,boston,2020-02-04,66,70000,basic,no,?
+83,Customer 83,New York,2024-10-23,28,76000,Basic,no,?
+84,Customer 84,boston,2020-07-12,33,69000,basic,no,?
+85,Customer 85,boston,2024-05-21,55,83000,PREMIUM,no,?
+86,Customer 86,Boston,2020-08-25,70,137000,PREMIUM,no,
+87,Customer 87,Seattle,2022-09-17,20,53000,enterprise,no,vip
+88,Customer 88,Chicago,2020-01-28,null,48000,PREMIUM,no,N/A
+89,Customer 89,New York,2021-10-25,38,177000,Basic,no,null
+90,Customer 90,NEW YORK,2023-09-08,20,70000,premium,no,-
+91,Customer 91,New York,2023-01-21,73,135000,basic,no,vip
+92,Customer 92,Chicago,2021-05-13,54,57000,PREMIUM,no,vip
+93,Customer 93,NEW YORK,2023-05-10,73,169000,basic,no,?
+94,Customer 94,Boston,2023-06-02,32,,enterprise,no,N/A
+95,Customer 95,Boston,2023-05-19,41,179000,basic,no,
+96,Customer 96,New York,2024-03-28,35,122000,basic,no,null
+97,Customer 97,Boston,2023-09-24,28,20000,PREMIUM,no,vip
+98,Customer 98,New York,2019-10-18,30,56000,enterprise,no,null
+99,Customer 99,NEW YORK,2019-05-21,?,8000000,PREMIUM,no,
+100,Customer 100,NEW YORK,2020-11-02,75,87000,enterprise,no,vip
+101,Customer 101,NEW YORK,2021-11-07,50,23000,Basic,no,?
+102,Customer 102,NEW YORK,2023-04-13,58,157000,basic,no,null
+103,Customer 103,NEW YORK,2020-07-20,54,,enterprise,no,
+104,Customer 104,New York,2019-03-23,20,null,premium,no,
+105,Customer 105,Seattle,2024-07-04,31,48000,basic,no,
+106,Customer 106,new york,2019-11-07,39,128000, premium ,no,vip
+107,Customer 107,Seattle,2023-09-16,57,null,basic,no,N/A
+108,Customer 108,Chicago,2019-10-27,45,20000, basic ,no,N/A
+109,Customer 109,Boston,2023-06-27,54,60000,Basic,no,
+110,Customer 110,Boston,2024-09-26,38,111000,basic,no,-
+111,Customer 111,NEW YORK,2022-09-17,74,79000,enterprise,no,-
+112,Customer 112,boston,2021-09-05,46,161000,PREMIUM,no,-
+113,Customer 113,Boston,2024-12-08,35,97000,enterprise,no,-
+114,Customer 114,boston,2023-06-06,30,86000,basic,no,N/A
+115,Customer 115,new york,2021-12-10,30,N/A,PREMIUM,yes,vip
+116,Customer 116,Boston,2024-04-17,36,138000, PREMIUM ,no,vip
+117,Customer 117,Chicago,2023-10-24,72,78000,enterprise,no,?
+118,Customer 118,Boston,2021-05-21,75,127000,Basic,no,null
+119,Customer 119,Seattle,2022-09-22,73,66000,basic,no,vip
+120,Customer 120,New York,2021-09-07,68,null,PREMIUM,no,-
+121,Customer 121,boston,2021-07-24,31,67000,basic,no,-
+122,Customer 122,NEW YORK,2022-07-02,?,127000,enterprise,no,null
+123,Customer 123,new york,2022-08-07,67,37000,PREMIUM,no,N/A
+124,Customer 124,NEW YORK,2024-11-27,70,125000,enterprise,no,N/A
+125,Customer 125,NEW YORK,2024-07-22,45,67000,premium,no,?
+126,Customer 126,Boston,2023-11-03,41,59000,basic,no,N/A
+127,Customer 127,boston,2021-11-19,,73000,premium,no,vip
+128,Customer 128,new york,2022-06-26,75,123000,enterprise,no,vip
+129,Customer 129,boston,2024-05-07,31,155000,basic,no,N/A
+130,Customer 130,Boston,2022-09-02,75,56000,Basic,no,-
+131,Customer 131,Boston,2024-10-16,71,139000,basic,no,
+132,Customer 132,boston,2019-11-24,39,44000, Basic ,no,-
+133,Customer 133,New York,2024-06-11,51,161000,PREMIUM,no,-
+134,Customer 134,NEW YORK,2021-08-13,35,149000,PREMIUM,no,-
+135,Customer 135,new york,2023-11-03,20,122000,enterprise,no,
+136,Customer 136,new york,2022-10-25,68,148000,enterprise,no,
+137,Customer 137,new york,2019-11-21,66,64000,basic,no,vip
+138,Customer 138,New York,2021-03-26,63,86000,basic,no,
+139,Customer 139,Boston,2023-09-02,67,127000,PREMIUM,no,N/A
+140,Customer 140,Boston,2022-09-04,48,74000, PREMIUM ,no,
+141,Customer 141,new york,2019-03-16,null,82000,basic,no,N/A
+142,Customer 142,Chicago,2019-05-21,49,137000,basic,yes,null
+143,Customer 143,New York,2022-05-10,28,144000,enterprise,no,
+144,Customer 144,NEW YORK,2024-03-21,48,118000,premium,no,
+145,Customer 145,boston,2024-12-26,39,N/A,enterprise,no,vip
+146,Customer 146,new york,2022-07-22,67,79000,basic,no,
+147,Customer 147,NEW YORK,2020-10-05,72,160000,premium,no,?
+148,Customer 148,new york,2024-04-10,61,121000,premium,yes,null
+149,Customer 149,New York,2023-06-25,?,168000,enterprise,no,N/A
+150,Customer 150,new york,2019-03-26,41,167000,enterprise,no,vip
+151,Customer 151,Boston,2021-02-12,68,40000,premium,no,N/A
+152,Customer 152,Seattle,2023-08-19,34,91000,enterprise,no,
+153,Customer 153,NEW YORK,2020-03-13,21,28000,PREMIUM,no,vip
+154,Customer 154,Seattle,2023-11-13,63,43000,basic,no,?
+155,Customer 155,Seattle,2020-06-08,32,64000,premium,no,
+156,Customer 156,NEW YORK,2023-12-24,48,34000,basic,no,null
+157,Customer 157,Boston,2024-02-16,34,119000,Basic,no,vip
+158,Customer 158,New York,2022-12-07,28,76000,premium,no,
+159,Customer 159,Boston,2019-11-03,39,102000,premium,no,?
+160,Customer 160,boston,2020-08-28,44,null,premium,no,-
+161,Customer 161,Boston,2022-02-05,21,74000,basic,no,-
+162,Customer 162,new york,2020-02-13,75,61000,premium,no,null
+163,Customer 163,NEW YORK,2023-03-15,null,93000,PREMIUM,no,N/A
+164,Customer 164,boston,2020-12-06,23,42000,premium,no,N/A
+165,Customer 165,boston,2021-04-01,null,124000,enterprise,no,?
+166,Customer 166,New York,2019-07-25,73,88000, premium ,no,
+167,Customer 167,NEW YORK,2023-08-17,-,82000,premium,no,
+168,Customer 168,NEW YORK,2019-12-16,19,155000,Basic,no,
+169,Customer 169,NEW YORK,2021-09-27,19,44000, premium ,no,null
+170,Customer 170,new york,2024-08-04,24,65000,PREMIUM,no,
+171,Customer 171,Boston,2020-09-19,32,57000,PREMIUM,no,vip
+172,Customer 172,Boston,2024-07-20,51,29000,premium,no,?
+173,Customer 173,Seattle,2023-06-27,53,33000,premium,no,-
+174,Customer 174,New York,2023-03-03,30,149000,PREMIUM,no,vip
+175,Customer 175,Chicago,2019-01-02,57,88000,enterprise,yes,
+176,Customer 176,boston,2019-07-08,36,48000,basic,no,vip
+177,Customer 177,NEW YORK,2019-08-19,27,132000,premium,no,
+178,Customer 178,Chicago,2023-05-27,62,165000,enterprise,no,null
+179,Customer 179,Boston,2022-05-01,32,68000,enterprise,no,N/A
+180,Customer 180,NEW YORK,2023-06-16,74,75000,Basic,no,
+181,Customer 181,boston,2022-08-12,24,153000,Basic,no,N/A
+182,Customer 182,boston,2023-05-27,24,141000,Basic,no,null
+183,Customer 183,boston,2019-08-13,54,58000,enterprise,no,?
+184,Customer 184,NEW YORK,2024-06-10,51,162000,basic,no,?
+185,Customer 185,NEW YORK,2020-09-10,45,167000,premium,no,-
+186,Customer 186,new york,2022-01-01,null,147000,premium,no,null
+187,Customer 187,Chicago,2024-07-13,20,172000,basic,no,-
+188,Customer 188,boston,2022-11-18,27,68000,PREMIUM,no,null
+189,Customer 189,Chicago,2019-03-12,22,-,premium,no,vip
+190,Customer 190,Boston,2024-03-17,50,73000,Basic,no,null
+191,Customer 191,Chicago,2024-12-02,18,20000,basic,no,
+192,Customer 192,Chicago,2019-04-06,53,165000,enterprise,no,null
+193,Customer 193,New York,2020-03-17,24,27000,enterprise,no,
+194,Customer 194,Chicago,2019-11-25,27,80000,premium,no,vip
+195,Customer 195,New York,2021-04-15,19,33000,basic,no,
+196,Customer 196,new york,2023-03-11,?,97000,PREMIUM,yes,null
+197,Customer 197,new york,2022-05-13,49,25000,Basic,no,-
+198,Customer 198,Boston,2023-06-04,73,118000,basic,no,?
+199,Customer 199,new york,2022-05-12,20,91000,Basic,no,null
+200,Customer 200,Seattle,2020-09-15,68,81000,PREMIUM,no,?
+201,Customer 201,boston,2020-04-28,26,86000,premium,no,N/A
+202,Customer 202,Seattle,2019-11-17,72,89000,basic,no,?
+203,Customer 203,Chicago,2019-12-06,32,102000,basic,no,-
+204,Customer 204,new york,2019-12-10,36,52000,premium,no,N/A
+205,Customer 205,NEW YORK,2020-01-12,60,?,Basic,no,vip
+206,Customer 206,New York,2020-05-04,56,,enterprise,no,?
+207,Customer 207,Chicago,2019-09-10,29,164000,enterprise,no,-
+208,Customer 208,New York,2019-11-10,74,N/A, basic ,no,-
+209,Customer 209,Chicago,2019-07-23,65,177000,basic,no,-
+210,Customer 210,Chicago,2023-12-23,58,N/A,PREMIUM,no,?
+211,Customer 211,Seattle,2020-01-23,53,86000,Basic,no,-
+212,Customer 212,NEW YORK,2022-02-07,26,54000,PREMIUM,no,?
+213,Customer 213,new york,2024-06-23,74,56000,basic,no,N/A
+214,Customer 214,boston,2022-07-27,62,9000000,basic,no,-
+215,Customer 215,Boston,2019-03-11,54,112000, basic ,no,
+216,Customer 216,Chicago,2024-06-24,24,145000,enterprise,no,-
+217,Customer 217,Chicago,2023-12-21,59,82000,basic,no,N/A
+218,Customer 218,Chicago,2023-11-06,64,99000,Basic,no,N/A
+219,Customer 219,boston,2021-05-08,,165000,PREMIUM,no,?
+220,Customer 220,Chicago,2020-05-20,23,56000,PREMIUM,no,vip
+221,Customer 221,Seattle,2022-08-07,41,20000,enterprise,no,null
+222,Customer 222,Chicago,2022-06-03,60,65000, premium ,no,null
+223,Customer 223,new york,2022-02-18,47,129000,Basic,no,
+224,Customer 224,Chicago,2024-06-20,54,166000,Basic,no,vip
+225,Customer 225,New York,2020-04-22,62,41000,enterprise,no,null
+226,Customer 226,Boston,2022-05-04,74,-,basic,no,N/A
+227,Customer 227,boston,2022-04-18,25,151000,PREMIUM,no,null
+228,Customer 228,boston,2023-12-27,25,180000,basic,no,N/A
+229,Customer 229,boston,2022-02-05,57,,basic,no,
+230,Customer 230,Chicago,2020-07-03,73,71000,premium,no,
+231,Customer 231,Seattle,2021-02-08,65,154000,basic,no,-
+232,Customer 232,Seattle,2023-02-02,61,82000, PREMIUM ,no,
+233,Customer 233,Boston,2019-02-26,27,161000,PREMIUM,no,-
+234,Customer 234,Boston,2019-01-11,49,,basic,no,?
+235,Customer 235,Seattle,2022-03-23,43,78000,basic,no,N/A
+236,Customer 236,boston,2023-01-07,41,139000,premium,no,N/A
+237,Customer 237,New York,2020-08-20,N/A,56000,enterprise,no,null
+238,Customer 238,new york,2024-01-18,24,71000,basic,no,N/A
+239,Customer 239,Chicago,2019-05-25,41,150000,enterprise,no,-
+240,Customer 240,Seattle,2022-09-12,69,80000, Basic ,no,?
+241,Customer 241,Boston,2023-05-06,27,97000,enterprise,no,N/A
+242,Customer 242,boston,2019-10-06,40,139000,PREMIUM,no,-
+243,Customer 243,new york,2021-05-18,N/A,180000, Basic ,no,vip
+244,Customer 244,NEW YORK,2023-11-04,64,34000,basic,no,N/A
+245,Customer 245,New York,2020-05-18,18,102000,premium,yes,null
+246,Customer 246,Chicago,2021-03-02,68,31000,PREMIUM,no,vip
+247,Customer 247,Seattle,2019-01-11,38,34000,premium,yes,null
+248,Customer 248,Seattle,2019-06-27,40,157000,Basic,no,null
+249,Customer 249,NEW YORK,2024-08-25,-,160000,premium,no,-
+250,Customer 250,New York,2023-08-04,67,112000,PREMIUM,no,N/A
+251,Customer 251,New York,2019-09-17,67,66000,Basic,no,vip
+252,Customer 252,Seattle,2020-09-01,63,82000,Basic,no,?
+253,Customer 253,new york,2021-01-04,18,36000,premium,no,?
+254,Customer 254,Chicago,2024-04-01,34,131000,premium,no,?
+255,Customer 255,new york,2023-03-16,73,88000,premium,no,N/A
+256,Customer 256,new york,2021-11-20,46,74000,Basic,no,?
+257,Customer 257,new york,2022-03-10,69,48000,Basic,no,
+258,Customer 258,Seattle,2020-08-22,44,106000,PREMIUM,no,N/A
+259,Customer 259,new york,2024-12-01,null,172000,basic,yes,vip
+260,Customer 260,New York,2019-02-16,51,5000000,Basic,no,vip
+261,Customer 261,boston,2021-08-03,31,77000, Basic ,no,vip
+262,Customer 262,new york,2023-01-14,41,2000000,enterprise,no,-
+263,Customer 263,Boston,2022-06-18,27,119000,Basic,no,null
+264,Customer 264,NEW YORK,2024-10-24,33,null,basic,yes,-
+265,Customer 265,Chicago,2024-08-18,47,9000000,enterprise,no,?
+266,Customer 266,NEW YORK,2024-02-13,35,176000,basic,no,null
+267,Customer 267,Seattle,2021-05-27,64,109000,Basic,yes,-
+268,Customer 268,boston,2020-09-06,33,64000,Basic,no,vip
+269,Customer 269,Seattle,2019-06-13,73,129000,premium,no,null
+270,Customer 270,boston,2021-08-22,43,94000,PREMIUM,no,null
+271,Customer 271,new york,2019-11-05,51,80000,PREMIUM,no,-
+272,Customer 272,New York,2023-03-10,35,102000,PREMIUM,no,vip
+273,Customer 273,new york,2020-07-26,67,115000,PREMIUM,no,?
+274,Customer 274,Boston,2024-10-26,33,118000,enterprise,no,-
+275,Customer 275,New York,2024-04-11,23,134000,PREMIUM,no,
+276,Customer 276,boston,2023-08-15,45,126000,basic,no,
+277,Customer 277,Chicago,2020-12-07,20,95000,PREMIUM,no,
+278,Customer 278,New York,2022-02-28,54,136000,premium,yes,?
+279,Customer 279,Seattle,2023-03-14,73,180000,enterprise,no,null
+280,Customer 280,NEW YORK,2019-06-13,72,96000,PREMIUM,no,?
+281,Customer 281,Seattle,2022-09-09,26,33000,PREMIUM,no,-
+282,Customer 282,new york,2022-12-18,64,3000000,enterprise,yes,?
+283,Customer 283,NEW YORK,2020-12-07,55,176000,PREMIUM,no,
+284,Customer 284,New York,2020-02-27,29,23000,Basic,no,-
+285,Customer 285,Seattle,2020-09-27,67,72000,Basic,no,-
+286,Customer 286,Chicago,2022-11-14,21,54000,premium,no,null
+287,Customer 287,Chicago,2020-05-09,71,74000,Basic,yes,-
+288,Customer 288,new york,2024-09-23,47,58000,PREMIUM,no,N/A
+289,Customer 289,Chicago,2023-09-03,40,24000,basic,no,null
+290,Customer 290,boston,2019-04-05,67,78000,enterprise,no,N/A
+291,Customer 291,Chicago,2021-01-06,46,143000,Basic,no,null
+292,Customer 292,Boston,2019-12-18,28,,enterprise,no,?
+293,Customer 293,boston,2021-02-12,64,61000,basic,no,vip
+294,Customer 294,Boston,2021-03-09,74,81000,enterprise,no,null
+295,Customer 295,boston,2019-09-09,30,92000,Basic,no,N/A
+296,Customer 296,New York,2019-02-02,68,166000,basic,no,
+297,Customer 297,Boston,2022-10-17,54,50000,Basic,no,
+298,Customer 298,Seattle,2020-02-20,24,30000,Basic,no,?
+299,Customer 299,boston,2020-01-11,44,124000,Basic,no,-
+300,Customer 300,Seattle,2020-04-07,61,, PREMIUM ,no,
+301,Customer 301,Seattle,2023-11-03,58,32000,basic,no,?
+302,Customer 302,Chicago,2024-08-05,62,97000,enterprise,no,null
+303,Customer 303,NEW YORK,2024-10-18,58,49000,premium,no,null
+304,Customer 304,Boston,2023-04-16,61,32000,premium,no,-
+305,Customer 305,Chicago,2023-07-26,37,145000,PREMIUM,no,-
+306,Customer 306,boston,2020-02-12,47,178000,premium,no,null
+307,Customer 307,Seattle,2020-02-07,20,116000,premium,no,-
+308,Customer 308,Seattle,2023-07-10,74,149000,Basic,yes,vip
+309,Customer 309,New York,2020-08-19,34,110000,enterprise,no,-
+310,Customer 310,Chicago,2022-02-17,46,88000,PREMIUM,no,?
+311,Customer 311,Boston,2021-12-01,,162000,enterprise,no,
+312,Customer 312,NEW YORK,2022-03-01,75,89000,enterprise,no,null
+313,Customer 313,Chicago,2021-11-25,67,159000,PREMIUM,no,?
+314,Customer 314,Boston,2024-06-23,38,61000,basic,no,null
+315,Customer 315,Seattle,2019-03-10,28,99000,PREMIUM,no,-
+316,Customer 316,NEW YORK,2022-04-20,46,123000,PREMIUM,no,
+317,Customer 317,new york,2023-08-17,58,60000,Basic,no,?
+318,Customer 318,Seattle,2019-05-13,43,155000,basic,no,null
+319,Customer 319,NEW YORK,2021-10-12,33,null,PREMIUM,no,vip
+320,Customer 320,new york,2024-03-24,62,50000,premium,no,N/A
+321,Customer 321,Chicago,2020-09-24,60,93000,basic,yes,null
+322,Customer 322,Chicago,2020-10-14,54,90000,Basic,no,null
+323,Customer 323,New York,2021-01-24,59,117000,PREMIUM,no,null
+324,Customer 324,boston,2023-05-20,32,99000,basic,no,-
+325,Customer 325,new york,2019-08-21,46,90000,enterprise,no,?
+326,Customer 326,New York,2022-04-10,39,104000,enterprise,no,null
+327,Customer 327,boston,2024-01-08,19,149000,premium,no,null
+328,Customer 328,boston,2022-04-22,21,115000,premium,no,?
+329,Customer 329,Chicago,2024-10-15,57,68000,Basic,no,N/A
+330,Customer 330,Seattle,2024-12-07,30,163000,premium,no,vip
+331,Customer 331,Chicago,2023-12-01,N/A,6000000,Basic,no,
+332,Customer 332,New York,2024-03-23,75,27000,basic,no,?
+333,Customer 333,Boston,2019-06-26,75,52000,premium,no,
+334,Customer 334,new york,2024-05-27,45,118000,PREMIUM,yes,null
+335,Customer 335,boston,2022-01-01,68,null,enterprise,no,null
+336,Customer 336,Boston,2022-11-07,N/A,null,Basic,no,?
+337,Customer 337,Seattle,2019-10-24,73,140000,Basic,no,vip
+338,Customer 338,boston,2020-02-16,22,81000,basic,no,
+339,Customer 339,new york,2019-04-26,?,32000,Basic,yes,null
+340,Customer 340,Boston,2021-01-05,48,46000,basic,no,null
+341,Customer 341,NEW YORK,2019-09-26,42,,enterprise,no,null
+342,Customer 342,New York,2024-01-22,36,N/A,basic,no,N/A
+343,Customer 343,New York,2024-11-24,45,null,premium,no,
+344,Customer 344,New York,2021-05-10,36,57000,premium,yes,
+345,Customer 345,Chicago,2024-10-07,47,124000,Basic,no,
+346,Customer 346,Seattle,2019-12-24,N/A,null,premium,no,-
+347,Customer 347,Seattle,2021-01-11,28,133000,PREMIUM,no,vip
+348,Customer 348,Seattle,2021-05-26,44,157000,premium,no,N/A
+349,Customer 349,NEW YORK,2019-09-06,70,100000,basic,no,null
+350,Customer 350,New York,2024-11-18,44,152000,basic,no,
+351,Customer 351,Chicago,2021-07-23,29,176000,premium,no,
+352,Customer 352,New York,2024-04-21,59,,PREMIUM,yes,
+353,Customer 353,New York,2021-02-05,64,146000,premium,no,vip
+354,Customer 354,NEW YORK,2021-07-14,29,133000,PREMIUM,no,N/A
+355,Customer 355,New York,2020-06-22,57,,Basic,no,-
+356,Customer 356,new york,2019-03-16,21,null,Basic,no,N/A
+357,Customer 357,NEW YORK,2021-09-24,41,84000,basic,no,?
+358,Customer 358,Seattle,2019-04-21,32,118000,PREMIUM,yes,?
+359,Customer 359,Seattle,2021-04-10,?,144000,PREMIUM,no,N/A
+360,Customer 360,new york,2022-08-02,22,88000,premium,yes,N/A
+361,Customer 361,boston,2023-07-04,?,154000,enterprise,no,-
+362,Customer 362,Boston,2022-12-05,?,101000,premium,no,-
+363,Customer 363,new york,2023-01-21,50,26000,basic,no,null
+364,Customer 364,new york,2024-06-05,74,102000,premium,no,
+365,Customer 365,boston,2022-12-03,72,29000,Basic,no,
+366,Customer 366,Boston,2019-11-06,?,79000,PREMIUM,no,vip
+367,Customer 367,new york,2022-04-10,47,89000, premium ,no,
+368,Customer 368,boston,2021-03-08,18,59000,PREMIUM,no,-
+369,Customer 369,new york,2023-02-09,27,55000,premium,yes,N/A
+370,Customer 370,New York,2023-08-26,74,165000,premium,no,?
+371,Customer 371,Seattle,2019-01-10,N/A,55000,premium,no,
+372,Customer 372,Boston,2020-08-22,61,114000,Basic,no,?
+373,Customer 373,new york,2024-05-21,41,154000,basic,no,
+374,Customer 374,Boston,2022-06-22,59,66000,Basic,no,vip
+375,Customer 375,boston,2022-07-05,32,114000,PREMIUM,no,N/A
+376,Customer 376,NEW YORK,2019-01-17,43,null,PREMIUM,no,?
+377,Customer 377,NEW YORK,2020-08-23,N/A,120000,premium,no,null
+378,Customer 378,Seattle,2020-06-25,59,?, enterprise ,no,?
+379,Customer 379,Chicago,2023-05-01,,64000,Basic,no,N/A
+380,Customer 380,New York,2019-02-03,30,-,premium,no,vip
+381,Customer 381,NEW YORK,2019-02-09,23,36000,premium,no,null
+382,Customer 382,Boston,2020-04-20,53,33000,PREMIUM,no,
+383,Customer 383,Seattle,2022-02-03,30,135000,Basic,no,?
+384,Customer 384,new york,2019-04-19,71,137000,PREMIUM,no,N/A
+385,Customer 385,Chicago,2019-04-17,58,136000,Basic,no,vip
+386,Customer 386,new york,2020-01-08,39,99000,premium,no,
+387,Customer 387,NEW YORK,2023-04-05,58,82000,basic,no,vip
+388,Customer 388,Chicago,2024-08-17,22,47000,PREMIUM,no,N/A
+389,Customer 389,Boston,2021-08-23,63,115000,premium,no,-
+390,Customer 390,new york,2019-09-05,null,-,PREMIUM,no,
+391,Customer 391,New York,2021-11-05,62,38000,enterprise,no,?
+392,Customer 392,Chicago,2021-06-04,47,161000,PREMIUM,no,-
+393,Customer 393,Seattle,2022-07-23,68,53000,PREMIUM,no,N/A
+394,Customer 394,New York,2021-09-16,62,58000,premium,no,N/A
+395,Customer 395,Chicago,2022-01-27,N/A,167000,premium,no,vip
+396,Customer 396,NEW YORK,2020-06-27,41,97000,PREMIUM,no,?
+397,Customer 397,Seattle,2024-10-25,70,33000,Basic,no,?
+398,Customer 398,Boston,2021-03-08,39,34000,premium,no,vip
+399,Customer 399,Chicago,2024-09-21,68,160000,PREMIUM,no,vip
+400,Customer 400,new york,2024-06-12,24,,Basic,no,
+401,Customer 401,new york,2022-11-13,48,116000,enterprise,no,-
+402,Customer 402,Chicago,2021-10-04,71,152000,basic,no,-
+403,Customer 403,boston,2021-11-23,59,165000, PREMIUM ,no,vip
+404,Customer 404,new york,2023-05-27,65,111000,enterprise,no,vip
+405,Customer 405,Chicago,2022-03-13,22,126000,premium,no,null
+406,Customer 406,New York,2024-03-20,71,163000,basic,no,null
+407,Customer 407,NEW YORK,2019-01-07,75,148000,Basic,no,N/A
+408,Customer 408,new york,2024-08-26,N/A,174000,Basic,no,
+409,Customer 409,Seattle,2019-06-23,68,80000,Basic,no,vip
+410,Customer 410,boston,2024-12-04,63,172000,PREMIUM,yes,vip
+411,Customer 411,Boston,2019-02-26,44,56000,Basic,no,N/A
+412,Customer 412,new york,2020-03-28,57,131000,Basic,no,
+413,Customer 413,boston,2021-03-14,46,171000,PREMIUM,no,null
+414,Customer 414,new york,2020-02-12,22,123000,premium,no,N/A
+415,Customer 415,Boston,2023-09-01,?,110000,PREMIUM,no,
+416,Customer 416,Chicago,2020-11-12,43,103000,premium,no,N/A
+417,Customer 417,NEW YORK,2019-03-26,57,102000,premium,no,null
+418,Customer 418,Seattle,2021-11-16,34,119000, premium ,no,null
+419,Customer 419,New York,2021-06-10,28,116000,basic,no,N/A
+420,Customer 420,New York,2022-05-04,64,47000,basic,no,
+421,Customer 421,Chicago,2022-12-13,58,65000,basic,no,-
+422,Customer 422,Chicago,2024-11-06,28,47000,Basic,no,?
+423,Customer 423,Boston,2021-08-08,19,64000,premium,no,null
+424,Customer 424,Chicago,2019-08-18,54,23000,enterprise,no,N/A
+425,Customer 425,Seattle,2019-09-17,29,118000,enterprise,no,
+426,Customer 426,Seattle,2021-07-23,54,117000,PREMIUM,no,-
+427,Customer 427,Boston,2020-05-07,68,177000,premium,no,null
+428,Customer 428,NEW YORK,2020-10-28,35,41000,basic,no,-
+429,Customer 429,boston,2023-07-23,23,-,basic,no,vip
+430,Customer 430,Seattle,2021-02-24,41,44000,premium,no,-
+431,Customer 431,new york,2023-09-17,54,91000,PREMIUM,no,vip
+432,Customer 432,New York,2024-03-26,21,174000,Basic,no,vip
+433,Customer 433,NEW YORK,2023-01-15,23,40000,basic,no,vip
+434,Customer 434,New York,2024-05-11,56,67000,basic,no,N/A
+435,Customer 435,new york,2020-08-28,34,86000,enterprise,no,?
+436,Customer 436,boston,2023-08-07,48,100000,Basic,no,N/A
+437,Customer 437,NEW YORK,2020-09-22,38,123000,PREMIUM,no,
+438,Customer 438,boston,2022-10-11,74,44000,Basic,no,null
+439,Customer 439,boston,2020-06-25,N/A,137000,premium,no,-
+440,Customer 440,Boston,2024-04-18,60,64000,premium,no,null
+441,Customer 441,New York,2022-01-07,31,N/A,basic,no,vip
+442,Customer 442,Chicago,2023-12-22,,129000,enterprise,no,null
+443,Customer 443,boston,2020-01-19,29,77000,premium,no,vip
+444,Customer 444,Chicago,2022-07-23,null,128000,premium,no,vip
+445,Customer 445,New York,2019-01-14,59,118000,enterprise,no,null
+446,Customer 446,new york,2020-03-05,55,51000,enterprise,no,
+447,Customer 447,Chicago,2019-04-14,66,21000,Basic,no,?
+448,Customer 448,NEW YORK,2022-01-08,71,32000,basic,no,
+449,Customer 449,Seattle,2021-02-11,45,98000,PREMIUM,no,-
+450,Customer 450,New York,2024-09-14,55,31000,Basic,no,
+451,Customer 451,NEW YORK,2019-02-17,63,68000,Basic,no,?
+452,Customer 452,New York,2024-04-22,30,124000,premium,no,N/A
+453,Customer 453,New York,2022-07-23,22,N/A,premium,no,?
+454,Customer 454,NEW YORK,2020-02-22,54,134000,PREMIUM,yes,
+455,Customer 455,Chicago,2020-10-24,,48000,Basic,no,-
+456,Customer 456,Boston,2024-05-06,46,3000000,PREMIUM,no,-
+457,Customer 457,Chicago,2019-02-26,60,2000000,basic,no,null
+458,Customer 458,Seattle,2023-08-21,71,164000,Basic,no,null
+459,Customer 459,boston,2023-04-20,50,52000,enterprise,no,?
+460,Customer 460,Seattle,2021-09-16,73,150000,premium,no,?
+461,Customer 461,NEW YORK,2024-11-07,73,111000,basic,no,N/A
+462,Customer 462,Seattle,2022-11-24,58,113000,basic,no,null
+463,Customer 463,boston,2024-05-26,39,106000,Basic,no,?
+464,Customer 464,New York,2024-03-11,73,132000,Basic,no,-
+465,Customer 465,New York,2024-04-11,N/A,33000,premium,no,null
+466,Customer 466,Boston,2023-05-01,29,117000,basic,no,null
+467,Customer 467,Chicago,2020-04-01,54,N/A,Basic,no,vip
+468,Customer 468,New York,2019-10-11,72,174000,Basic,no,-
+469,Customer 469,New York,2020-02-11,33,128000,PREMIUM,no,-
+470,Customer 470,NEW YORK,2022-12-16,18,33000,enterprise,no,null
+471,Customer 471,Boston,2020-02-09,65,132000,premium,no,
+472,Customer 472,New York,2020-06-01,50,136000,enterprise,no,null
+473,Customer 473,Boston,2019-06-10,31,76000,premium,no,
+474,Customer 474,boston,2024-06-27,60,156000,basic,no,vip
+475,Customer 475,NEW YORK,2020-07-01,60,70000,PREMIUM,no,N/A
+476,Customer 476,Seattle,2021-12-02,N/A,102000,PREMIUM,no,
+477,Customer 477,Chicago,2020-12-06,59,148000,Basic,no,null
+478,Customer 478,new york,2024-08-24,26,90000,enterprise,no,vip
+479,Customer 479,Seattle,2020-11-15,38,165000,PREMIUM,no,
+480,Customer 480,New York,2023-10-02,62,151000,basic,no,
+481,Customer 481,boston,2020-08-03,62,136000,Basic,no,N/A
+482,Customer 482,NEW YORK,2021-02-03,,32000,premium,no,N/A
+483,Customer 483,Boston,2023-05-18,69,35000,basic,no,null
+484,Customer 484,Seattle,2020-07-23,42,136000,Basic,no,N/A
+485,Customer 485,new york,2024-05-13,,75000,PREMIUM,no,-
+486,Customer 486,Boston,2020-03-12,60,123000,PREMIUM,no,N/A
+487,Customer 487,Chicago,2024-04-12,75,44000,basic,no,N/A
+488,Customer 488,NEW YORK,2022-01-28,34,55000,Basic,no,
+489,Customer 489,Seattle,2024-07-27,71,?,Basic,no,?
+490,Customer 490,Boston,2021-03-04,54,68000,Basic,no,
+491,Customer 491,Seattle,2020-08-02,59,165000,premium,no,vip
+492,Customer 492,new york,2024-06-12,69,36000,premium,no,
+493,Customer 493,New York,2023-01-07,23,?,Basic,no,-
+494,Customer 494,new york,2024-07-04,73,22000,PREMIUM,no,vip
+495,Customer 495,new york,2021-01-11,44,156000,basic,no,?
+496,Customer 496,boston,2023-08-09,44,N/A,PREMIUM,no,vip
+497,Customer 497,boston,2019-02-22,74,?,Basic,no,-
+498,Customer 498,Boston,2024-11-24,27,120000,basic,no,N/A
+499,Customer 499,NEW YORK,2019-03-02,36,31000,enterprise,no,
+500,Customer 500,NEW YORK,2019-12-12,57,121000,basic,no,?
+99,Customer 99,NEW YORK,2019-05-21,?,8000000,PREMIUM,no,
+28,Customer 28,new york,2024-04-06,50,123000,premium,no,?
+112,Customer 112,boston,2021-09-05,46,161000,PREMIUM,no,-
+59,Customer 59,new york,2023-01-21,26,180000,basic,no,vip
+98,Customer 98,New York,2019-10-18,30,56000,enterprise,no,null
+52,Customer 52,New York,2024-07-15,26,93000,enterprise,no,-
+83,Customer 83,New York,2024-10-23,28,76000,Basic,no,?
+123,Customer 123,new york,2022-08-07,67,37000,PREMIUM,no,N/A
+166,Customer 166,New York,2019-07-25,73,88000, premium ,no,
+183,Customer 183,boston,2019-08-13,54,58000,enterprise,no,?
+97,Customer 97,Boston,2023-09-24,28,20000,PREMIUM,no,vip
+101,Customer 101,NEW YORK,2021-11-07,50,23000,Basic,no,?
+133,Customer 133,New York,2024-06-11,51,161000,PREMIUM,no,-
+194,Customer 194,Chicago,2019-11-25,27,80000,premium,no,vip
+143,Customer 143,New York,2022-05-10,28,144000,enterprise,no,
