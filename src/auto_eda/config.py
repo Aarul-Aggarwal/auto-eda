@@ -56,6 +56,16 @@ class Config:
         "class_imbalance": 0.8,
     })
 
+    # Quality score — weight of each dimension in the overall 0-100 score.
+    # Must be kept in sync with the dimensions defined in quality.py.
+    quality_weights: dict[str, float] = field(default_factory=lambda: {
+        "Completeness": 0.30,   # how much data is actually present
+        "Validity": 0.25,       # values that violate the column's type
+        "Consistency": 0.20,    # formatting / casing uniformity
+        "Uniqueness": 0.15,     # freedom from duplicate rows
+        "Structure": 0.10,      # freedom from constant / redundant columns
+    })
+
     # LLM
     llm_sample_values: int = 10  # max sample values per column sent to the LLM
     llm_max_findings_ranked: int = 15
