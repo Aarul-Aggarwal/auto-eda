@@ -14,7 +14,7 @@ auto-eda analyze data.csv --target churn --report
 
 ```
 ╭───────────────────────────── Data Quality Score ─────────────────────────────╮
-│  99/100   A+   EXCELLENT      was 90 A-   ▲ 9                                 │
+│  99/100   A+   EXCELLENT      was 90 A-   ▲ 9                                │
 │                                                                              │
 │  Completeness  █████████████████████░  97 +9   104 / 4,000 cells missing     │
 │  Validity      ██████████████████████ 100      0 / 8 columns type-violating  │
